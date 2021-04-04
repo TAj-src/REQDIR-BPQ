@@ -12,6 +12,8 @@ Add a cron to crontab e.g.
 Check for REQDIR msgs
 0 1 * * * /home/pi/linbpq/scrips/reqdir.sh > /dev/null 2>&1
 
-
-
 Replace /dev/null if you want to log the output (e.g. /tmp/reqdir.log)
+
+
+Make a forwarder to export to the directoy you set earlier for REQDIR
+
