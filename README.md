@@ -9,8 +9,8 @@ Edit the settings at the top of the file
 Add a cron to crontab e.g.
 
 
-# #Check for REQDIR msgs
-# 0 1 * * * /home/<usr>/linbpq/scrips/reqdir.sh > /dev/null 2>&1
+Check for REQDIR msgs
+0 1 * * * /home/pi/linbpq/scrips/reqdir.sh > /dev/null 2>&1
 
 
 
