@@ -78,7 +78,7 @@ while read -r line; do
 
    if [ "$first3" == "/EX" ] && [ $IN_MSG -eq 1 ]; then  # END of message so process
 	IN_MSG=0
- 	echo "SP $FROM_CALL$FROMBBS < REQDIR@$BBS_NAME$BBS_HR" >> $MAIL_FILE
+ 	echo "SP $FROM_CALL$FROMBBS < $BBS_NAME@$BBS_NAME$BBS_HR" >> $MAIL_FILE
         echo "REQDIR Reply from $BBS_NAME" >> $MAIL_FILE
         echo -e "File listing for $BBS_NAME\n" >> $MAIL_FILE
         pushd $FILE_DIR > /dev/null
